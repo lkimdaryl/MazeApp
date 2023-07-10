@@ -25,7 +25,7 @@ public class MazeApplication {
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
                 registry.addViewController("/")
-                        .setViewName("forward:/index.html");
+                        .setViewName("forward:/main.html");
             }
         };
     }
@@ -34,7 +34,7 @@ public class MazeApplication {
     public ErrorViewResolver customErrorViewResolver() {
         return (request, status, model) -> {
             if (status == HttpStatus.NOT_FOUND) {
-                return new ModelAndView("forward:/index.html", Collections.emptyMap(), HttpStatus.OK);
+                return new ModelAndView("forward:/main.html", Collections.emptyMap(), HttpStatus.OK);
             } else {
                 return null;
             }
