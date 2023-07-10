@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    console.log(1);
     const genMazeButton = document.querySelector("#gen-maze-bttn");
     const solveMazeButton = document.querySelector("#solve-maze-bttn");
     const mazeContainer = document.getElementById("maze-container");
