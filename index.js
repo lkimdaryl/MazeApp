@@ -235,6 +235,7 @@ class MazeSolver {
 
     return false;
     }
+    arse = 0;
 }
 
   
